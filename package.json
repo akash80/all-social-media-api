@@ -1,6 +1,6 @@
 {
   "name": "all-social-media-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Post to Facebook, Instagram, LinkedIn, and Threads from Node.js: cross-post content and images, fetch recent posts with comments, reply to comments in batch, create Meta ads, and delete posts.",
   "type": "module",
   "main": "dist/index.js",
