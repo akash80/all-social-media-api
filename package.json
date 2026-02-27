@@ -1,0 +1,71 @@
+{
+  "name": "all-social-media-api",
+  "version": "1.0.0",
+  "description": "Post to Facebook, Instagram, LinkedIn, and Threads from Node.js: cross-post content and images, fetch recent posts with comments, reply to comments in batch, create Meta ads, and delete posts.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      },
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "author": "Akash Arora",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash80/all-social-media-api.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.cjs.json",
+    "example": "npm run build && npx tsx examples/post-once.ts",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:e2e": "dotenv -e .env -- vitest run --config vitest.config.e2e.ts"
+  },
+  "keywords": [
+    "social-media",
+    "facebook",
+    "instagram",
+    "linkedin",
+    "threads",
+    "cross-post",
+    "all-social-media-api",
+    "marketing",
+    "meta-ads",
+    "comments",
+    "reply",
+    "get-recent-posts",
+    "delete-post",
+    "nodejs"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    ".env.example",
+    "examples",
+    "docs"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.1.0"
+  }
+}

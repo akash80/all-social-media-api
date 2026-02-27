@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Env and secrets (never commit)
+.env
+.env.local
+.env.*.local
+test-config.local.ts
+test-config.local.js
+**/test-config.local.*
+
+# Test output
+coverage/
+.nyc_output/
+*.lcov
+.e2e-post-links.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
