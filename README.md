@@ -104,6 +104,12 @@ Or: `npx tsx examples/post-once.ts`. Optionally set `POST_IMAGE_URL`, `POST_CONT
 
 ---
 
+## Network behavior
+
+This library uses `globalThis.fetch` for all HTTP requests, calling only the official social platform APIs you configure (and any image URLs you provide). It does not send telemetry or call unknown third‑party endpoints. Tools like Socket may show a "Network access" alert because outbound HTTP is required for these features; this is expected.
+
+---
+
 ## API reference
 
 ### SocialPostingClient
